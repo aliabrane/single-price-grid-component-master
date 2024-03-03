@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   padding: 10% 20%;
+}
+
+.cyan-text{
+    color: hsl(179, 62%, 43%);
+}
+.bright-text{
+    color: hsl(71, 73%, 54%);
+}
+
+.white-text{
+    color: white;
+}
+
+.money{
+font-size: 2rem;
+}
+
+button{
+    width: 100%;
+padding: 10px 0;
+color: white;
+background-color: hsl(71, 73%, 54%);
+border: none;
+border-radius: 5px;
+}
+
+p{
+    padding:10px 0 ;
+}
+
+section{
+    padding: 30px;
+    border: 1px solid hsl(204, 43%, 93%) ;
+   
+}
+
+.sec-1{
+    border-top-right-radius:7px ;
+    border-top-left-radius: 7px;
+    grid-column: span 2;
+    box-shadow: 1px 1px 5px rgb(226, 220, 220) ;
+}
+
+
+
+.sec-2{
+    border-bottom-left-radius: 7px;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.sec-3{
+    border-bottom-right-radius: 7px;
+    background-color: hsl(180, 73%, 37%);
+}
+
+@media(max-width:768px){
+    main{
+        display: flex;
+       flex-direction: column;
+    }
+
+
+}
